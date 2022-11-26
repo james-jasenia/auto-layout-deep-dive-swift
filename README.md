@@ -18,3 +18,6 @@ It is straight forward. The painful part of size classes is that iPhone Max and 
 - Content Layout Guide: Position Constraints.
 - Frame Layout Guide: Size Constraints (250 priority on the scroll direction).
 
+# Debugging
+- When using the Debug View Hieracy, it's very helpful to the print the description of the ui element to the console (via right click). You are then able to use the memory address to filter out the noise in the view hierachy.
+- Accessbility Inspect has an audit tool and it is amazing!
