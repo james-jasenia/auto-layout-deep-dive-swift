@@ -7,9 +7,9 @@ This is a great medium article explaining the different setups for `.xib`s. Ther
 2. `Bundle.main.loadNibNamed(_:owner:options:)`
 
 
-If you are using Custom Class, you should use `Bundle.main.loadNibNamed(_:owner:options:)`. You cannot load the `UINib` in the `init(coder:)` method of the custom class otherwise you will end up with a retain cycle. It must be done in an external class such as a `ResuableXibView` or a `UIViewController`. You are not able to create an `@IBOutlet` in another storyboard view using this approach. You are resticted to progammatic (I think).
+- If you are using Custom Class, you should use `Bundle.main.loadNibNamed(_:owner:options:)`. You cannot load the `UINib` in the `init(coder:)` method of the custom class otherwise you will end up with a retain cycle. It must be done in an external class such as a `ResuableXibView` or a `UIViewController`. You are not able to create an `@IBOutlet` in another storyboard view using this approach. You are resticted to progammatic (I think).
 
-If you are using File Owner, you should use `instantiate(withOwner:options:)` in the File Owner's class. This is the more flexible and reusable option where you have the freedom to instantiate the view both programatically and via storyboard.
+- If you are using File Owner, you should use `instantiate(withOwner:options:)` in the File Owner's class. This is the more flexible and reusable option where you have the freedom to instantiate the view both programatically and via storyboard.
 
 # Size Classes
 It is straight forward. The painful part of size classes is that iPhone Max and Pro models have a regular width where as the base models have a compact width.
