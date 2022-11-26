@@ -11,5 +11,10 @@ If you are using Custom Class, you should use `Bundle.main.loadNibNamed(_:owner:
 
 If you are using File Owner, you should use `instantiate(withOwner:options:)` in the File Owner's class. This is the more flexible and reusable option where you have the freedom to instantiate the view both programatically and via storyboard.
 
+# Size Classes
+It is straight forward. The painful part of size classes is that iPhone Max and Pro models have a regular width where as the base models have a compact width.
 
+# Scroll View Layout Guides
+- Content Layout Guide: Position Constraints.
+- Frame Layout Guide: Size Constraints (250 priority on the scroll direction).
 
