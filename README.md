@@ -12,7 +12,7 @@ This is a great medium article explaining the different setups for `.xib`s. Ther
 - If you are using File Owner, you should use `instantiate(withOwner:options:)` in the File Owner's class. This is the more flexible and reusable option where you have the freedom to instantiate the view both programatically and via storyboard.
 
 # Size Classes
-It is straight forward. The painful part of size classes is that iPhone Max and Pro models have a regular width where as the base models have a compact width.
+- It is straight forward. The painful part of size classes is that iPhone Max and Pro models have a regular width where as the base models have a compact width.
 
 # Scroll View Layout Guides
 - Content Layout Guide: Position Constraints.
